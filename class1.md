@@ -13,5 +13,7 @@
 - [Meetup](https://www.meetup.com/find/events/)
     - Seattle JS Meetup on _November 14th_
 - [Eventbrite](https://www.eventbrite.com/d/wa--seattle/tech-meetup/)
+
+### Coding notes from today can be found at [Gist on GitHub](https://gist.github.com/madisonstehle/4d8a9233fe7f51cfb19db2a10bcc9b99)
  
 #### [Back to Home](index.md)
