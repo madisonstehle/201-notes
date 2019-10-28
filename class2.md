@@ -3,6 +3,7 @@
 ## HTML, CSS, JS
 
 ### Semantic HTML Tags Cheat Sheet: Beyond `<div>`
+
 - `<sup></sup>` contains characters that should be superscript
 - `<sub></sub>` contains characters that should be subscript
 - `<br />` adds a line break
@@ -16,6 +17,7 @@
 - `<s></s>` indicates that something is no long relevant, but should not be deleted (rendered with a line through content)
 
 ### CSS: Cascading Style Sheets
+
 In CSS Syntax, there are _selectors_ and _declarations_.
 In the example below, `p` is the selector (targeting an element) and `{color: #665544;}` is the declaration. 
 
@@ -60,5 +62,90 @@ CSS can sometimes manifest differently on different computers, so instead of che
 If you come accross a CSS bug, you can research and/or check these sites:
 - PositionIsEverything.net
 - QuirksMode.org
+
+### JavaScript: The Interactive Layer
+
+Oftentimes, when a user triggers an event, JS runs a script that makes something happen to make the website feel more interactive.
+
+That being said, to make the thing happen, the computer needs a detailed script, or series of steps that tell it what to do and when to do it. So, before beginning to write your JS, it is good to know **what your goal is** and **make a flowchart of how to get there**.
+
+**There are two types of expressions**:
+
+1. Expressions that assign a value to a variable. For example, `var color = 'beige';`
+2. Expressions that use two or more values to _return_ a single value, or `var area = 3 * 2;`
+
+To make these expressions work, programmers use **operators**. Examples are:
+- Assignment Operators (`color = 'beige';`)
+- Arithmetic Operators (`area = 3 * 2;`), _pg 76_
+- String Operators (`greeting = 'Hi ' + 'Molly';`)
+- Comparison Operators (`buy = 3 > 5;`)
+- Logical Operators (`buy = (5 > 3) && (2 < 4);`)
+
+In other JavaScript news, you can create **functions** that let you groups statements together to perform a specific task. You can even REUSE the function by _calling_ it.
+
+```js
+function sayHello() {
+    document.write('Hello!');
+}
+```
+When functions require more information to run, you can do that with **parameters** and **arguments**. The parameters in the example below are `(width, height)`.
+```js
+function getArea(width, height) {
+    return width * height;
+}
+```
+When you _call_ the function, you fill in the required information or _parameters_: `getArea(3, 5);`.
+
+#### An Array
+Arrays are special types of variables that store a _list of values_. For example, a shopping list!
+
+```javascript
+var colors;
+colors = ['white', 'black', 'custom'];
+```
+
+These values in the array are given a number called an **index**. The index starts at **0** with the first value in the array. So, in the example above, for the value `'black'`, the index is **1**. 
+
+To retrieve a value, you call it with the variable name with the index. i.e. `colors[2];`.
+
+#### Comparison Operators
+
+- `==` _is equal to_ | Compares two values to see if they are the same.
+- `===` _is strictly equal to_ | Compates two values to check that both the data type AND value are the same.
+- `!=` _is not equal to_ | compares values to see if they are not the same.
+- `=!` _strict not equal to_ | compares two values to check that both the data type and value are not the same.
+- `>` _greater than_ | checks is the number on the left is greater than the number on the right.
+- `<` _less than_ | checks if the number on the left is less than the number on the right.
+- `>=` _greater than or equal to_ | checks if the number on the left is greater than or equal to the number on the right.
+- `<=` _less than or equal to_ | checks if the number on the left is less than or equal to the number on the right.
+
+#### Logical Operators
+
+- `&&` _logical and_ | tests more than one condition
+- `||` _logical or_ | tests at least one condition
+- `!` _logical not_ | takes a single Boolean value and inverts it
+
+### Loop d'Loop
+
+#### For Loop
+When you need to run code a specific number of times, use a **for** loop. The condition is usually a counter which is used to tell how many times the code should run.
+
+```javascript
+for (var i = 0; i < 10; i++) {
+    document.write(i);
+}
+```
+In the code above, the condition is a counter that that counts to ten. The result would be 0123456789.
+
+Parts to a for loop are:
+- **Initialization** (`var i = 0`): Tells the counter where to start
+- **Condition** (`i < 10`): Tells it when to stop
+- **Update** (`i++`): when thing loop, how do change
+
+#### Do While dilly dilly dum While Loop
+
+If the number of times code should run is unknown, use a **while** loop. The condition is something other than a counter and the code will loop for as long as the condition is `true`.
+
+the **do...while** loop is similar to the **while** loop. The difference is: it will always run the statements inside the braces _at least once_, even if the condition evaluates to `false`.
 
 #### [Back to Home](index.md)
