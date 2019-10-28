@@ -2,7 +2,7 @@
 
 ## HTML, CSS, JS
 
-### Semantic HTML Tags Cheat Sheet: Beyond <div>
+### Semantic HTML Tags Cheat Sheet: Beyond `<div>`
 - `<sup></sup>` contains characters that should be superscript
 - `<sub></sub>` contains characters that should be subscript
 - `<br />` adds a line break
