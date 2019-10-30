@@ -125,27 +125,4 @@ To retrieve a value, you call it with the variable name with the index. i.e. `co
 - `||` _logical or_ | tests at least one condition
 - `!` _logical not_ | takes a single Boolean value and inverts it
 
-### Loop d'Loop
-
-#### For Loop
-When you need to run code a specific number of times, use a **for** loop. The condition is usually a counter which is used to tell how many times the code should run.
-
-```javascript
-for (var i = 0; i < 10; i++) {
-    document.write(i);
-}
-```
-In the code above, the condition is a counter that that counts to ten. The result would be 0123456789.
-
-Parts to a for loop are:
-- **Initialization** (`var i = 0`): Tells the counter where to start
-- **Condition** (`i < 10`): Tells it when to stop
-- **Update** (`i++`): when thing loop, how do change
-
-#### Do While dilly dilly dum While Loop
-
-If the number of times code should run is unknown, use a **while** loop. The condition is something other than a counter and the code will loop for as long as the condition is `true`.
-
-the **do...while** loop is similar to the **while** loop. The difference is: it will always run the statements inside the braces _at least once_, even if the condition evaluates to `false`.
-
 #### [Back to Home](index.md)
