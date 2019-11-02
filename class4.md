@@ -39,4 +39,81 @@ Another thing to keep in mind is the `clear` property. It allows you to say that
 
 There is a problem that sometimes happens with floating elements. If a containing element _only_ contains floated elements, some browsers, will treat it as if it is zero pixels tall. This can be fixed using the `overflow` and `width` properties!
 
+## Function Examples
+
+Example 1:
+```JavaScript
+function makeSandwich (meat, cheese, bread) {
+    var newSandwich = 'Here is your ' + meat + ' and ' + cheese + ' on ' + bread + ' sandwich!';
+    return newSandwich;
+}
+var mySandwich = makeSandwich('tempeh', 'daiya', 'sourdough');
+console.log(mySandwich);
+```
+
+Example 2:
+```JavaScript
+// cat html pseudocode:
+// inputs (parameters): name, image, description
+// work: insert name, image, description into the text.
+// outputs (return values): an html article w/ name, image, description.
+
+function createCatArticle(name, image, description) {
+    var catArticle = '<article>' + 
+        '<h3>' + name + '</h3>' +
+        '<img src="' + image + '">' +
+        '<p>' + description + '</p>' +
+        '</article>';
+    return catArticle;
+}
+
+var wantsToAdd = prompt('Hey there! Do you want to add a cat?');
+if (wantsToAdd === 'yes') {
+    var catName = prompt('What is the name of the cat?');
+    var catImage = prompt('What is the name of the file containing the iamage?');
+    var catDescription = prompt('What is the description of the cat?');
+    var newCat = createCatArticle(catName, catImage, catDescription);
+    document.write(newCat);
+}
+```
+
+Example 3:
+```JavaScript
+// Red Light Loop
+var lightColor = prompt('What color is the light?');
+
+while (lightColor === 'red') {
+    console.log('Stop the car!');
+    lightColor = prompt('What color is the light?');
+} 
+
+console.log('Goooooo!');
+```
+
+Examples 4 and 5:
+```JavaScript
+// Push Up Loop
+var pushupCounter = 0;
+
+while (pushupCounter < 10) {
+    console.log('Do a pushup!');
+    // pushupCounter = pushupCounter + 1;
+    // pushupCounter += 1;
+    pushupCounter++;
+}
+
+console.log('You did the pushups!')
+
+// Shorthand: For Loops!
+for (var pushupCounter = 0; pushupCounter < 10; pushupCounter++) {
+    console.log('Do a pushup!');
+    console.log('I have done ' + pushupCounter + ' pushups!');
+    }
+
+for (var i = 0; i < 10; i++) {
+    console.log('Do a pushup!');
+    console.log('I have done ' + i + ' pushups!');
+}
+```
+
 #### [Back to Home](index.md)
