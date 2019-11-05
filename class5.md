@@ -69,4 +69,15 @@ Some quick notes about **typefaces**:
 
 _Link styling: Page 290-291_
 
+## Forking vs. Branching
+
+When a repo is _forked_, the copy of the repo exists in a separate repo that the person who forked it owns.
+
+When repos are _branched_, then all the changes must be merged with the master. They are just "branches" of the original.
+
+```
+git checkout -b "feature1"
+Switched to a new branch 'feature1'
+```
+
 #### [Back to Home](index.md)
