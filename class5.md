@@ -78,6 +78,10 @@ When repos are _branched_, then all the changes must be merged with the master. 
 ```
 git checkout -b "feature1"
 Switched to a new branch 'feature1'
+
+// after changes
+git checkout master
+git pull origin master
 ```
 
 #### [Back to Home](index.md)
