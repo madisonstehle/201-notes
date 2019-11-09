@@ -69,5 +69,30 @@ For attributes:
 - `setAttribute()` | updates the value
 - `removeAttribute()` | removes an attribute
 
+## Examples
+
+### HTML:
+```html
+<body>
+    <ul id="firstAndPike"></ul>
+    <script src="app.js"></script>
+</body>
+```
+
+### JavaScript:
+```javascript
+// store the html point of contact
+var firstAndPikeElement = document.getElementById('firstAndPike);
+
+// create the element
+var liEl = document.createElement('li');
+
+// give the element content
+liEl.textContent = 'proof of life';
+
+// append to the DOM
+firstAndPikeElement.appendChild(liEl);
+```
+
 #### [Back to Home](index.md)
 
