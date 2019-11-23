@@ -46,4 +46,13 @@ You can narrow down what the problem might by following this workflow:
     - Break down/break out parts of the code to test smaller places of the functionality
     - Check the number of parameters for a function, or the number of items in an array
 
+Resources:
+- console
+- `console.log`
+- `typeof`
+- linter
+- follow the variable
+- commenting out code
+- break points
+
 #### [Back to Home](index.md)
