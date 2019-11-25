@@ -17,3 +17,4 @@
 - [Class 8](class8.md)
 - [Class 9](class9.md)
 - [Class 10](class10.md)
+- [Class 11](class11.md)
