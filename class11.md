@@ -38,6 +38,32 @@ All of these properties' values can be shorthanded _into_ the `background` prope
 4. `background-attachment`
 5. `background-position`
 
+## Audio
 
+Ways to control audio playback:
+- Autoplay | boolean; uMust be last inside audio tag
+- Controls | allows user to control playback
+- loop | boolean; repeats over and over
+- muted | boolean; mutes the audio
+- src | where the audio file is located
+- volume | range of 0.0 to 1.0
+
+```html
+<audio controls src="" autoplay></audio>
+```
+
+## Video
+
+- autoplay | boolean; use with caution
+- controls | shows the controls
+- height | must be an absolute value - not percentage
+- width | can be absolute of percentage
+- poster | shows a starting image
+- src | the path to the video source
+- volume | controls the volume
+
+```html
+<video controls src="" poster=""></video>
+```
 
 #### [Back to Home](index.md)
